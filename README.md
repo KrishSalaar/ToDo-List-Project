@@ -21,7 +21,7 @@ A modern, responsive todo list application built with Spring Boot and vanilla Ja
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone <https://github.com/KrishSalaar/ToDo-List-Project.git>
 cd todo-app
 ```
 
