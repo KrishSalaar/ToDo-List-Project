@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+            <div class="add-task">
+                <input type="text" id="taskTitle" placeholder="Enter task title">
+                <textarea id="taskDescription" placeholder="Enter task description"></textarea>
+                <select id="taskPriority">
+                    <option value="IMPORTANT">Important</option>
+                    <option value="UNIMPORTANT">Unimportant</option>
+                </select>
+                <button onclick="addTask()">Add Task</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="task-columns">
+                <div class="column" id="todoColumn">
+                    <h2>To Do</h2>
+                    <div class="task-list" id="todoList"></div>
+                </div>
+                
+                <div class="column" id="ongoingColumn">
+                    <h2>Ongoing</h2>
+                    <div class="task-list" id="ongoingList"></div>
+                </div>
+                
+                <div class="column" id="completedColumn">
+                    <h2>Completed</h2>
+                    <div class="task-list" id="completedList"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
